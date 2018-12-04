@@ -1,0 +1,85 @@
+body {
+  background-image: url("paper.jpg");
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Special Elite', cursive;
+}
+
+nav {
+  background: black;
+  font-family: 'Special Elite', cursive;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 40px;
+  color: white;
+}
+
+nav a:hover {
+  color: red;
+}
+
+.logo {
+  position: absolute;
+  left: 75%;
+  top: 1%;
+}
+
+.social {
+  align: right;
+  padding-top: 75px;
+}
+
+.copyright {
+  font-family: 'Special Elite', cursive;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: 'Special Elite', cursive;
+  color: black;
+  padding: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.image {
+  padding: 50px;
+  float: right;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}

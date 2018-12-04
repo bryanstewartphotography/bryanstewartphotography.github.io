@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento|Special+Elite" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="gallerystyles.css">
+  <title>Gallery - Bryan Stewart Photography</title>
+  <style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+  <header>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <div class="logo"><img src="logo.png" alt="" width=300px></div>
+  </nav>
+  </header>
+
+
+<div class="gallery">
+  <div class="left">
+<button onclick="plusDivs(-1)"><i class="fas fa-arrow-circle-left fa-4x"></i>
+</button></div>
+  <img class="mySlides" src="images/senior2.jpg">
+  <img class="mySlides" src="images/mothersday2.jpg">
+  <img class="mySlides" src="images/mothersday1.jpg">
+  <img class="mySlides" src="images/single1.jpg">
+  <img class="mySlides" src="images/hank1.jpg">
+  <img class="mySlides" src="images/senior1.jpg">
+  <img class="mySlides" src="images/mothersday3.jpg">
+  <img class="mySlides" src="images/senior4.jpg">
+  <img class="mySlides" src="images/single2.jpg">
+  <img class="mySlides" src="images/senior3.jpg">
+  <img class="mySlides" src="images/mothersday5.jpg">
+  <img class="mySlides" src="images/mothersday4.jpg">
+  <img class="mySlides" src="images/senior5.jpg">
+<div class="right"><button onclick="plusDivs(+1)"><i class="fas fa-arrow-circle-right fa-4x"></i></button></div>
+<div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
